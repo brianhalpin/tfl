@@ -24,6 +24,7 @@ enum APICredentials {
 * TubeViewModel - **ViewModel** calls the network layer and then assigns the results to the view lines array.
 * TubeList - **View** which displays a list of TubeRow views in each row.
 * TubeRow - **View** which displays two columns, one for the tube line and the other for the tube status.
+* Configured for both Dark & Light mode.
 
 
 ### *TFL Supporting Files* ###
