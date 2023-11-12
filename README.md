@@ -7,7 +7,7 @@ A simple app that accesses the TFL REST API at https://api.tfl.gov.uk, and will 
 
 The app has been built in Xcode 14.3.1 & Swift 5.8.
 
-The app needs to be configured with the API URL. This needs to be assignd to the APICredentials.swift file, in the statusURL variable (Make sure to include https).
+The app needs to be configured with the API URL. This needs to be assigned in the APICredentials.swift file, to the statusURL variable (Make sure to include https in the URL).
 
 ```Swift
 enum APICredentials {
