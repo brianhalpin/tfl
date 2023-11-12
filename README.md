@@ -9,6 +9,11 @@ The app has been built in Xcode 14.3.1 & Swift 5.8.
 
 The app needs to be configured with the API URL. This needs to be inserted into the APICredentials.swift file, in the statusURL variable.
 
+```Swift
+enum APICredentials {
+    static let statusURL = ""
+}
+```
 
 ##  TFL Tube Status Overview ##
 
