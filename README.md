@@ -7,7 +7,7 @@ A simple app that accesses the TFL REST API at https://api.tfl.gov.uk, and will 
 
 The app has been built in Xcode 14.3.1 & Swift 5.8.
 
-The app needs to be configured with the API URL. This needs to be inserted into the APICredentials.swift file, in the statusURL variable.
+The app needs to be configured with the API URL. This needs to be assignd to the APICredentials.swift file, in the statusURL variable (Make sure to include https).
 
 ```Swift
 enum APICredentials {
@@ -17,7 +17,7 @@ enum APICredentials {
 
 ##  TFL Tube Status Overview ##
 
-### *TFL Tube Status/* ###
+### *TFL Tube Status* ###
 
 * APIClient - Protocol and class for handling API requests.
 * TubeLine - **Model** definition, complies with Decodable keys from the JSON API.
@@ -26,7 +26,7 @@ enum APICredentials {
 * TubeRow - **View** which displays two columns, one for the tube line and the other for the tube status.
 
 
-### *TFL/Supporting Files* ###
+### *TFL Supporting Files* ###
 
 Contains configuration and necessary JSON files for the app to run tests, and a Color/String extension for colours.
 
@@ -45,3 +45,7 @@ For the purposes of this demo, I have assumed that:
 
 * The app always has network connectivity.
 * All urls are valid when lowercase and percent-encoded.
+
+## Improvements ##
+
+* Further tasks could include a drop-down animated effect on the status row cell to show the reason for a disruption.
