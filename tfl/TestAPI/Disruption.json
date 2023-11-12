@@ -1,0 +1,50 @@
+[
+    {
+        "$type": "Tfl.Api.Presentation.Entities.Line, Tfl.Api.Presentation.Entities",
+        "id": "circle",
+        "name": "Circle",
+        "modeName": "tube",
+        "disruptions": [],
+        "created": "2023-11-08T12:14:25.603Z",
+        "modified": "2023-11-08T12:14:25.603Z",
+        "lineStatuses": [
+            {
+                "$type": "Tfl.Api.Presentation.Entities.LineStatus, Tfl.Api.Presentation.Entities",
+                "id": 0,
+                "statusSeverity": 4,
+                "statusSeverityDescription": "Planned Closure",
+                "reason": "CIRCLE LINE: Saturday 24 and Sunday 25 March, no Circle line service throughout the line.",
+                "created": "0001-01-01T00:00:00",
+                "validityPeriods": [
+                    {
+                        "$type": "Tfl.Api.Presentation.Entities.ValidityPeriod, Tfl.Api.Presentation.Entities",
+                        "fromDate": "2018-03-24T04:30:00Z",
+                        "toDate": "2018-03-26T01:29:00Z",
+                        "isNow": true
+                    }
+                ],
+                "disruption": {
+                    "$type": "Tfl.Api.Presentation.Entities.Disruption, Tfl.Api.Presentation.Entities",
+                    "category": "PlannedWork",
+                    "categoryDescription": "PlannedWork",
+                    "description": "CIRCLE LINE: Saturday 24 and Sunday 25 March, no Circle line service throughout the line.",
+                    "created": "2018-01-10T09:34:00Z",
+                    "affectedRoutes": [],
+                    "affectedStops": [],
+                    "closureText": "plannedClosure"
+                }
+            }
+        ],
+        "routeSections": [],
+        "serviceTypes": [
+            {
+                "$type": "Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities",
+                "name": "Regular",
+                "uri": "/Line/Route?ids=Circle&amp;serviceTypes=Regular"
+            }
+        ],
+        "crowding": {
+            "$type": "Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"
+        }
+    }
+]
