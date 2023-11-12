@@ -10,9 +10,9 @@ The app has been built in Xcode 14.3.1 & Swift 5.8.
 The app needs to be configured with the API URL. This needs to be inserted into the APICredentials.swift file, in the statusURL variable.
 
 
-##  Overview ##
+##  TFL Tube Status Overview ##
 
-### *tfl-app/* ###
+### *TFL Tube Status/* ###
 
 * APIClient - Protocol and class for handling API requests.
 * TubeLine - **Model** definition, complies with Decodable keys from the JSON API.
@@ -21,7 +21,7 @@ The app needs to be configured with the API URL. This needs to be inserted into 
 * TubeRow - **View** which displays two columns, one for the tube line and the other for the tube status.
 
 
-### *tfl-app/Supporting Files* ###
+### *TFL/Supporting Files* ###
 
 Contains configuration and necessary JSON files for the app to run tests, and a Color/String extension for colours.
 
@@ -33,9 +33,6 @@ There are two test targets, both of which can be run through the standard test m
 1. *APIClientTests* - standard unit tests for the model and the API. Tests both the live API and the test API feeds.
 
 2. *UITests/* - BDD tests, these are tested using the Test JSON API using **XCUIApplication** launch arguments.
-
-
-##  Notes ##
 
 ### Assumptions ###
 
