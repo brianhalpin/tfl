@@ -9,6 +9,7 @@ import SwiftUI
 
 struct TubeRow: View {
     
+    @Environment(\.colorScheme) var colorScheme: ColorScheme
     var tubeLine: TubeLine
     
     var body: some View {
@@ -30,12 +31,13 @@ struct TubeRow: View {
                 Text(NSLocalizedString(tubeLine.lineStatuses[0].statusSeverityDescription, comment: "Tube Status"))
                     .multilineTextAlignment(.leading)
                     .accessibilityLabel(tubeLine.lineStatuses[0].statusSeverityDescription)
+                    .foregroundColor(colorScheme == .dark ? .white : .black)
                     .accessibilityHint("The status of the tube line.")
                     .accessibility(identifier: "TUBE_LINE_STATUS")
             }
             .frame(minWidth: 0, maxWidth: .infinity, minHeight: 40, alignment: .leading)
             .padding(5)
-            .background(Color.backgroundStatusColor(tubeLine.lineStatuses[0].statusSeverityDescription))
+            .background(Color.backgroundStatusColor(status: tubeLine.lineStatuses[0].statusSeverityDescription, mode: colorScheme))
         }
     }
 }

@@ -8,5 +8,5 @@
 import Foundation
 
 enum APICredentials {
-    static let statusURL = ""
+    static let statusURL = "https://api.tfl.gov.uk/Line/Mode/Tube/Status"
 }

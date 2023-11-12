@@ -20,11 +20,12 @@ extension Color {
         return Color.gray
     }
     
-    public static func backgroundStatusColor(_ status: String) -> Color {
+    public static func backgroundStatusColor(status: String, mode: ColorScheme) -> Color {
+        
         if status.lowercased() == "good service" {
-            return Color.white
+            return mode == .dark ? .statusDarkBackground : .white
         } else {
-            return Color.disruptionBackground
+            return mode == .dark ? .disruptionDarkBackground : .disruptionLightBackground
         }
     }
     
@@ -55,8 +56,16 @@ extension Color {
     
     // London Underground line colours
     
-    public static var disruptionBackground: Color {
+    public static var disruptionLightBackground: Color {
         return Color(UIColor(red: 246/255, green: 238/255, blue: 203/255, alpha: 1.0))
+    }
+    
+    public static var disruptionDarkBackground: Color {
+        return Color(UIColor(red: 138/255, green: 131/255, blue: 67/255, alpha: 1.0))
+    }
+    
+    public static var statusDarkBackground: Color {
+        return Color(UIColor(red: 53/255, green: 58/255, blue: 74/255, alpha: 1.0))
     }
     
     public static var bakerloo: Color {
